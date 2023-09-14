@@ -15,10 +15,7 @@
 /* noutbuk */
 @media (max-width: 1024px) {
 
-    .about_card-box {
-        flex-shrink: 0;
-
-      }
+  
 }      
 /* iped */
 /* @media (max-width: 992px) {}        */
@@ -131,11 +128,11 @@ position: static;
     }
 
 h2 {
-        font-size: 17px;
+        font-size: 17px !important;
     }
 
     .header__text p {
-        font-size: 15px;
+        font-size: 15px !important;
     }
 }
 
@@ -168,6 +165,10 @@ h2 {
 }
 
 @media (max-width: 410px) {
+    .about{
+        margin-bottom: 20px;
+    }
+
     .header_banner {
         object-position: 0px -100px;
     }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/frenfork.css">
     <link rel="stylesheet" href="style/media.css">
-
+<link rel="stylesheet" href="libs/bootstrap.css">
 </head>
 
 <body>
@@ -136,58 +136,118 @@
 
 
                     <div class="about_card">
-                        <div class="about_card-box">
-                            <img src="images/3d figma.png" alt="">
-                            <h2>Figma</h2>
-                            <p class="tex-linted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                                necessitatibus dolore
-                                aliquam voluptates! Veniam eligendi iusto, quo placeat minima mollitia delectus
-                                veritatis.</p>
-                        </div>
-                        <div class="about_card-box">
-                            <img src="images/git.png" alt="">
-                            <h2>Git GitHub</h2>
-                            <p class="tex-linted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                                necessitatibus dolore
-                                aliquam voluptates! Veniam eligendi iusto, quo placeat minima mollitia delectus
-                                veritatis.</p>
-                        </div>
-                        <div class="about_card-box">
-                            <img src="images/bootstrap.png" alt="">
-                            <h2>Bootstrap</h2>
-                            <p class="tex-linted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                                necessitatibus dolore
-                                aliquam voluptates! Veniam eligendi iusto, quo placeat minima mollitia delectus
-                                veritatis.</p>
-                        </div>
-                        <div class="about_card-box">
-                            <img src="images/bem.png" alt="">
-                            <h2>Bem</h2>
-                            <p class="tex-linted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                                necessitatibus dolore
-                                aliquam voluptates! Veniam eligendi iusto, quo placeat minima mollitia delectus
-                                veritatis.</p>
-                        </div>
-                        <div class="about_card-box">
-                            <img src="images/sass.svg" alt="">
-                            <h2>Sass</h2>
-                            <p class="tex-linted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                                necessitatibus dolore
-                                aliquam voluptates! Veniam eligendi iusto, quo placeat minima mollitia delectus
-                                veritatis.</p>
-                        </div>
-                        <div class="about_card-box">
-                            <img src="images/tailwind.png" alt="">
-                            <h2>tailwind</h2>
-                            <p class="tex-linted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                                necessitatibus dolore
-                                aliquam voluptates! Veniam eligendi iusto, quo placeat minima mollitia delectus
-                                veritatis.</p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item about_item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button about_button about_accordion" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                         <img style="width: 40px;" src="images/3d figma.png" alt="">Figma
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body about_body">
+                                        <strong>Figma the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item about_item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button about_button collapsed about_accordion" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <img style="width: 40px; margin-right: 5px;" src="images/sass.svg" alt=""> Sass
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body about_body">
+                                        <strong>Sass the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item about_item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button about_button collapsed about_accordion" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <img style="width: 40px; margin-right: 5px;" src="images/bem.png" alt=""> Bem
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body about_body">
+                                        <strong>Bem the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item about_item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button about_button collapsed about_accordion" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <img style="width: 40px; margin-right: 5px;" src="images/bootstrap.png" alt=""> Bootstrap
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body about_body">
+                                        <strong>Bootstrap the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item about_item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button about_button collapsed about_accordion" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        <img style="width: 50px; margin-right: 5px;" src="images/git.png" alt=""> Git / GitHub
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body about_body">
+                                        <strong>Git / GitHub the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item about_item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button about_button collapsed about_accordion" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false"
+                                        aria-controls="collapseSix">
+                                        <img style="width: 40px; margin-right: 5px;" src="images/tailwind.png" alt=""> Tailwind
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body about_body">
+                                        <strong>Tailwind the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                       
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-           
+
             </div>
         </section>
     </main>
@@ -199,6 +259,7 @@
     </div>
 
     <script src="main.js"></script>
+ <script src="libs/bootstrap.js" ></script>
 </body>
 
 </html>

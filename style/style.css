@@ -32,8 +32,8 @@
 /* zzzzzzzzzzz Loading */
 
 body {
-    background-color: var(--body);
-    font-family: monospace;
+    background-color: var(--body) !important;
+    font-family: monospace !important;
 }
 
 :root {
@@ -53,8 +53,8 @@ body {
 
 a,
 li {
-    text-decoration: none;
-    list-style: none;
+    text-decoration: none !important;
+    list-style: none !important;
 }
 
 nav {
@@ -79,11 +79,15 @@ nav .container {
     display: flex;
 }
 
+ul{
+    margin: 0 !important;
+}
+
 .nav_link {
     color: var(--tex);
     padding: 11px 15px;
     display: inline-block;
-    font-size: 19px;
+    font-size: 19px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,81 +191,6 @@ nav .container {
     position: relative;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 5%;
-    width: 6vw;
-    height: 11vh;
-    border-radius: 50%;
-    border: 1px solid var(--btn);
-    box-shadow: 0px 0px 7px var(--btn);
-    left: 15%;
-    animation: befor 5s alternate infinite linear;
-    z-index: -1;
-}
-
-
-.header::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    border: 1px solid var(--btn);
-    right: 45%;
-    bottom: 25%;
-    animation: after 1.8s alternate infinite both;
-    box-shadow: 0px 0px 7px var(--btn);
-    width: 5vw;
-    height: 4vh;
-}
-
-@keyframes after {
-    0% {
-        border-radius: 5%;
-        transform: rotate(90deg) scale(1);
-
-    }
-
-    100% {
-        transform: rotate(10deg) scale(1.5);
-        border-radius: 50%;
-
-    }
-}
-
-@keyframes befor {
-    0% {
-        border-radius: 5%;
-        transform: rotate(0) translateX(0);
-        top: 0;
-        transform: translateY(200px);
-    }
-
-    20% {
-        transform: translateX(40%);
-    }
-
-    40% {
-        transform: translateX(80%);
-        transform: translateY(10px);
-    }
-
-    60% {
-        transform: translateX(120%);
-    }
-
-    80% {
-        transform: translateX(160%);
-    }
-
-    100% {
-        transform: translateY(200px);
-        bottom: 0;
-        border-radius: 50%;
-        transform: rotate(-360deg) translateX(200%);
-    }
-}
-
 .header_card:nth-child(2) {
     position: relative;
 }
@@ -343,12 +272,12 @@ nav .container {
 }
 
 h2 {
-    font-size: 38px;
-    color: #ffb647;
-    font-family: cursive;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 15px;
+    font-size: 38px !important;
+    color: #ffb647 !important;
+    font-family: cursive !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
 }
 
 .tex-linted {
@@ -411,6 +340,10 @@ h2 {
 /* zzzzzzzzzzzzzzzzzzzzzzzz -=about start =-zzzzzzzzzzzzzzzzzzzzzzzzzzzz */
 
 
+.about{
+    margin-bottom: 30px;
+}
+
 .about .container h2 {
     margin-bottom: 30px;
 }
@@ -460,7 +393,7 @@ h2 {
 }
 
 .about_card {
-    max-width: 570px;
+    max-width: 550px;
     width: 100%;
     position: relative;
 }
@@ -475,35 +408,9 @@ h2 {
 
 }
 
-.about_card:nth-child(2) {
-    overflow: auto;
-    display: flex;
-    column-gap: 20px;
-    max-width: 360px;
-    width: 100%;
-
-}
 
 
-.about_card-box {
-    overflow: hidden;
-    text-align: center;
-    max-width: 310px;
-    width: 100%; 
-    border: 3px solid turquoise;
-    padding: 15px;
-    box-shadow: 0px 0px 8px 1px inset #09c0fa;
-    border-radius: 15px;
-    flex-shrink: 0;
-    scroll-snap-type: x mandatory;
-}
 
-.about_card-box img {
-    max-width: 100px;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
 
 .about_cards {
     display: flex;
@@ -514,15 +421,24 @@ h2 {
     text-align: center;
 }
 
-
-*::-webkit-scrollbar {
-    height: 1px;
-    background-color: #ffb647;
-    width: 5px;
-    bottom: 0;
+.about_accordion{
+    background-color: #4e4f4d !important;
+    backdrop-filter: blur(10px) !important;
+    color: #09c0fa !important;
+    font-size: 19px !important;
 }
 
+.about_body{
+    background-color: var(--body) !important;
+    color: #ffb647 !important;
+}
 
+.about_item{
+    background-color:var(--body) !important ;
+}
 
+.about_button{
+    padding: 5px 5px 5px 16px !important;
+}
 
 /* zzzzzzzzzzzzzzzzzzzzzzzz -=about end =-zzzzzzzzzzzzzzzzzzzzzzzzzzzz */
